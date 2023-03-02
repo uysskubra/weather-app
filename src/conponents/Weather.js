@@ -43,7 +43,7 @@ export default function Weather() {
       </div>
 
       
-      {isActive ? <div className="info">
+      {isActive && <div className="info">
 
             <p>{info.name} {info.sys.country}</p>
             <div className="genelDeger">
@@ -56,7 +56,7 @@ export default function Weather() {
             </div>
 
 
-      </div> : null}
+      </div>}
     </div>
   );
 }
